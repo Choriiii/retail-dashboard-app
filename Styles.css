@@ -1,0 +1,14 @@
+:root{
+    --tittles-font: 'Anton', sans-serif;
+    --p-font:'Satoshi', sans-serif;
+}
+*{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--p-font);
+}
+body > div{
+    background-color: black;
+    color: white;
+}
