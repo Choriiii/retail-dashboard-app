@@ -13,7 +13,11 @@
 header,main{
     padding: 16px;
 }
+
+
 /* header styles */
+
+
 #sign-up{
     background-color: black;
     color: white;
@@ -31,4 +35,33 @@ header img{
 }
 #header-icons{
     gap: 12px;
+}
+
+
+/* side bar styles */
+
+#side-bar{
+    position: absolute;
+    left: -300vh;
+    top: 45px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    transition: all 0.7s;
+    z-index: 3;
+}
+
+#side-bar li{
+    text-align: left;
+    list-style: none;
+    margin: 30px 25px;
+    color: black;
+}
+#side-bar a{
+    color: black;
+}
+#checkbox:checked ~ #side-bar{
+    left: 0; 
+    transition: all 0.5s;
 }
