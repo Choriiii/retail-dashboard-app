@@ -19,6 +19,11 @@ hr{
     width: 90%;
     margin: 0 auto;
 }
+h2{
+     font-size: var(--h1-size);
+    font-family: var(--tittles-font);
+    letter-spacing: 2px;
+}
 
 /* header styles */
 
@@ -138,11 +143,6 @@ h1{
     gap: 20px;
     padding: 40px 10px;
 }
-.section-3-4 h2{
-    font-size: var(--h1-size);
-    font-family: var(--tittles-font);
-    letter-spacing: 2px;
-}
 .s-products{
     display: flex;
     flex-direction: row;
@@ -171,4 +171,19 @@ h1{
     border: solid rgba(0, 0, 0, 0.1);
 }
 
-/* section 4 styles */
+ /* section 5 styles */
+ #section-5{
+    background-color: rgba(240, 240, 240, 1);
+    text-align: center;
+    border-radius: 20px;
+    margin: 5px 15px;
+ }
+ #section-5 h2{
+    width: 246px;
+    margin: auto;
+    padding-top: 40px;
+ }
+ #section-5 img{
+    margin-top: 20px;
+    box-shadow: 10px;
+ }
