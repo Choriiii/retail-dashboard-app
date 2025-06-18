@@ -129,21 +129,21 @@ h1{
     gap: 20px;
     justify-content: center;
 }
-/* section 3 styles */
+/* section 3 and 4 styles */
 
-#section-3{
+.section-3-4{
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 40px 10px;
 }
-#section-3 h2{
+.section-3-4 h2{
     font-size: var(--h1-size);
     font-family: var(--tittles-font);
     letter-spacing: 2px;
 }
-#s-3-products{
+.s-products{
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -164,9 +164,11 @@ h1{
     font-weight: bold;
     margin-bottom: 30px;
 }
-#section-3 button{
+.section-3-4 button{
     background-color: white;
     padding: 16px;
     border-radius: 62px;
     border: solid rgba(0, 0, 0, 0.1);
 }
+
+/* section 4 styles */
