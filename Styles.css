@@ -1,16 +1,18 @@
 :root{
-    --tittles-font: 'Anton', sans-serif;
+    --tittles-font: 'Bebas Neue', sans-serif;
     --p-font:'Satoshi', sans-serif;
+    --p-size: 14px;
+    --h1-size: 34px;
+    --h4-size:22px;
 }
 *{
-    text-align: center;
     text-decoration: none;
     list-style: none;
     font-family: var(--p-font);
     padding: 0;
     margin: 0;
 }
-header,main{
+header{
     padding: 16px;
 }
 
@@ -64,4 +66,51 @@ header img{
 #checkbox:checked ~ #side-bar{
     left: 0; 
     transition: all 0.5s;
+}
+
+/* section a styles */
+
+#section-1{
+    background-color: rgba(242, 240, 241, 1);
+}
+#section-1-text{
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-size: var(--h1-size);
+    line-height: 40px;
+    font-family: var(--tittles-font);
+    width: 315px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+}
+#section-1 > p{
+    font-size: var(--p-size);
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#section-1 button{
+    border: none;
+    background-color: black;
+    border-radius: 62px;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+}
+#section-1-facts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+#section-1-facts h4{
+    font-size: var(--h4-size);
+}
+#section-1-facts p{
+    font-size: 12px;
 }
