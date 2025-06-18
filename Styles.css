@@ -114,3 +114,15 @@ h1{
 #section-1-facts p{
     font-size: 12px;
 }
+
+/* section 2 styles */
+
+#section-2{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    gap: 20px;
+    justify-content: center;
+}
