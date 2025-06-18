@@ -255,3 +255,45 @@ h1{
     border: none;
     font-size: var(--p-size);
 }
+
+/* footer styles */
+
+footer{
+    background-color: rgba(240, 240, 240, 1);
+    padding: 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 40px;
+}
+#footer-icons{
+    width: 100%;
+}
+footer i{
+    background-color: white;
+    border-radius: 100px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: 5px;
+}
+.footer-divs{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    min-width: 146px;
+    margin-bottom: 20px;
+}
+.footer-divs h4{
+    letter-spacing: 3px;
+}
+.footer-divs a{
+    color: rgba(0, 0, 0, 0.6);
+}
+#copy{
+    margin: auto;
+    color: rgba(0, 0, 0, 0.6)
+}
+img[alt="Pay-methods"]{
+    margin: auto;
+}
