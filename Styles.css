@@ -2,7 +2,7 @@
     --tittles-font: 'Bebas Neue', sans-serif;
     --p-font:'Satoshi', sans-serif;
     --p-size: 14px;
-    --h1-size: 34px;
+    --h1-size: 45px;
     --h4-size:22px;
 }
 *{
@@ -15,7 +15,10 @@
 header{
     padding: 16px;
 }
-
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* header styles */
 
@@ -125,4 +128,45 @@ h1{
     padding: 30px 10px;
     gap: 20px;
     justify-content: center;
+}
+/* section 3 styles */
+
+#section-3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 10px;
+}
+#section-3 h2{
+    font-size: var(--h1-size);
+    font-family: var(--tittles-font);
+    letter-spacing: 2px;
+}
+#s-3-products{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 20px;
+}
+.Products{
+    text-align: left;
+}
+.Products img{
+    width: 240px;
+}
+.Products h4{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.Products p{
+    font-size: var(--h4-size);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#section-3 button{
+    background-color: white;
+    padding: 16px;
+    border-radius: 62px;
+    border: solid rgba(0, 0, 0, 0.1);
 }
