@@ -229,3 +229,29 @@ h1{
     font-size: var(--p-size);
     line-height: 20px;
 }
+
+/* section 7 styles */
+
+#section-7{
+    margin: 40px 15px;
+    background-color: black;
+    color: white;
+    padding: 30px 24px;
+    border-radius: 20px;
+}
+#section-7 h2{
+    width: 297px;
+    line-height: 40px;
+}
+#section-7 form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+#section-7 input, #section-7 button{
+    padding: 12px;
+    border-radius: 62px;
+    border: none;
+    font-size: var(--p-size);
+}
