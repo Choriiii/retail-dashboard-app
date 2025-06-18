@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles.css">
 </head>
 <body>
+    <div id="sign-up">
+        <p>Sign up and get 20% oof to your first order. <a href="#">Sing Up Now</a></p>
+    </div>
+    <header>
+        <!-- small menu -->
+        <div id="small menu">
+            <div>
+                <input id="checkbox" type="checkbox" style="display: none;">
+                <label for="checkbox" id="checkbox-label" aria-label="toggle navigation bar" aria-controls="small-menu">
+                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                </label>
+                <!-- side bar -->
+                <div id="side-bar">
+                    <label style="position: absolute; left: 99%;" for="checkbox" id="checkbox-label-2"
+                        aria-label="Toggle mobil menu" aria-controls="small-menu">
+                        <i class="fa-solid fa-xmark" style="color: #000000; position: absolute; right: 48px; "></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">On Sale</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="#"><img src="../assets/Logo.svg" alt="Logo"></a>
+            </div>
+            <div id="header-icons">
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <i class="fa-regular fa-user" style="color: #000000;"></i>
+            </div>
+        </div>
+    </header>
     <h2>Casual</h2>
-    <main>
+    <main class="s-products">
         <div class="Products">
             <img src="../assets/Smocked-Bandeau-Dress-green.webp" alt="Green-dress">
             <h4 class="Product-name">Smocked Bandeau Dress</h4>
@@ -116,25 +154,27 @@
                 </div>
             <p class="Price">$145</p>
         </div>
-    
+    </main>
     <!-- section 7 -->
 
         <section id="section-7">
-            <form action="#">
             <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
-            <input type="text" id="email" name="email" placeholder="Enter your email adress">
-            <button><a href="#">Subscribe to Newsletter</a></button>
+            <form action="#">
+                <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="email" name="email"
+                    placeholder="Enter your email adress">
+                <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
             </form>
         </section>
-    </main>
+
         <!-- footer -->
 
         <footer>
             <img src="../assets/Logo.svg" alt="Logo">
-            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <p style="color: rgba(0, 0, 0, 0.6);">We have clothes that suits your style and which you’re proud to wear.
+                From women to men.</p>
             <div id="footer-icons">
                 <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-                <i class="fa-brands fa-facebook-f" style="color: #080808;"></i>
+                <i style="padding: 8px 11px;" class="fa-brands fa-facebook-f" style="color: #080808;"></i>
                 <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                 <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
             </div>
@@ -145,21 +185,21 @@
                 <a href="#">Work</a>
                 <a href="#">Career</a>
             </div>
-             <div class="footer-divs">
+            <div class="footer-divs">
+                <h4>HELP</h4>
+                <a href="#">Customer Support</a>
+                <a href="#">Delivery Details</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-divs">
                 <h4>FAQs</h4>
                 <a href="#">Acount</a>
                 <a href="#">Manage Deliveries</a>
                 <a href="#">Orders</a>
                 <a href="#">Payment</a>
             </div>
-             <div class="footer-divs">
-                <h4>Help</h4>
-                <a href="#">Customer Support</a>
-                <a href="#">Delivery Details</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-             <div class="footer-divs">
+            <div class="footer-divs">
                 <h4>RESOURCES</h4>
                 <a href="#">Free eBook</a>
                 <a href="#">Development Tutorial</a>
@@ -167,7 +207,7 @@
                 <a href="#">Youtube Playlist</a>
             </div>
             <hr>
-            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <p id="copy">Shop.co © 2000-2023, All Rights Reserved</p>
             <img src="../assets/pay-methods.svg" alt="Pay-methods">
         </footer>
 </body>
