@@ -4,6 +4,7 @@
     --p-size: 14px;
     --h1-size: 45px;
     --h4-size:22px;
+    --div-h4-sizes:16px;
 }
 *{
     text-decoration: none;
@@ -156,7 +157,7 @@ h1{
     width: 240px;
 }
 .Products h4{
-    font-size: 16px;
+    font-size: var(--div-h4-sizes);
     margin-top: 10px;
 }
 .Products p{
@@ -172,18 +173,59 @@ h1{
 }
 
  /* section 5 styles */
+
+
  #section-5{
     background-color: rgba(240, 240, 240, 1);
     text-align: center;
     border-radius: 20px;
-    margin: 5px 15px;
+    margin: 0px 15px;
+    padding: 15px;
  }
  #section-5 h2{
     width: 246px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 25px;
  }
  #section-5 img{
     margin-top: 20px;
     box-shadow: 10px;
  }
+
+/* section 6 styes */
+
+#section-6{
+    padding: 10px;
+    position: relative;
+}
+#section-6 h2{
+    width: 286px;
+    line-height: 36px;
+    margin-top: 30px;
+}
+#section-6-icons{
+    position: absolute;
+    left: 300px;
+    top: 90px;
+}
+#s-6-container{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 20px;
+}
+.Section-6-reviews{
+    min-width: 314px;
+    padding: 24px;
+    border: solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 25px;    
+}
+.Section-6-reviews h4{
+    margin: 7px 0px;
+    font-size: var(--div-h4-sizes);
+}
+.Section-6-reviews p{
+    font-size: var(--p-size);
+    line-height: 20px;
+}
