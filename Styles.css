@@ -298,3 +298,28 @@ footer i{
 img[alt="Pay-methods"]{
     margin: auto;
 }
+
+/* Casual.html styles */
+
+
+#casual-body h3{
+    margin: 15px 16px;
+    font-size: 24px;
+}
+
+#casual-body .s-products{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 15px;
+}
+#casual-body .Products{
+    overflow: hidden;
+}
+#casual-body img{
+    width: 172px;
+    border-radius: 14px;
+}
+#casual-body h4{
+    width: 172px;
+}
