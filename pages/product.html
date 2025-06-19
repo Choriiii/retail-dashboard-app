@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles.css">
 </head>
 
 <body>
@@ -96,13 +100,7 @@
     </footer>
 
     <!-- Java Script -->
-    <script>
-        const productJSON = localStorage.getItem('selectedProduct')
-        document.getElementById('product-name').textContent = product.name;
-        document.getElementById('product-price').textContent = `Price: ${product.price}`;
-        document.getElementById('product-image').src = product.image;
-        document.getElementById('product-image').alt = product.name;
-    </script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
