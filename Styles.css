@@ -325,3 +325,8 @@ img[alt="Pay-methods"]{
 }
 
 /* Products Page Styles */
+
+#product-image{
+    width: 358px;
+    border-radius: 20px;
+}

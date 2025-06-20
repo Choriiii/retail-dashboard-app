@@ -10,7 +10,7 @@ document.querySelectorAll('.Products').forEach(product =>{
         window.location.href = 'product.html'
     })
 })
-// Selecte the items to display them in the products page 
+// Select the items to display them in the products page 
     const productJSON = localStorage.getItem('selectedProduct')
         const product = JSON.parse(productJSON);
         document.getElementById('product-name').textContent = product.name;
