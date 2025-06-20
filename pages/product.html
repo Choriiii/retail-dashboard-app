@@ -47,20 +47,110 @@
 
     <!-- Product page body -->
     <main id="product-details">
+
+        <!-- Product images -->
+
         <img id="product-image" src="" alt="Product image">
+        <div id="slider">
+            <img id="model-img" src="" alt="">
+            <img id="image-2" src="" alt="">
+            <img id="image-3" src="" alt="">
+        </div>
+
+        <!-- Product Info -->
+
         <h1 id="product-name"></h1>
-         <div class="rating">
-                        <span class="star" data-value="5">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="1">&#9733;</span>
-                </div>
+        <div class="rating">
+            <span class="star" data-value="5">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="1">&#9733;</span>
+        </div>
         <p id="product-price"></p>
         <p id="product-description"></p>
+        <hr>
+        <p>Select Colors</p>
+        <div>
+            <span id="color-1"></span>
+            <span id="color-2"></span>
+        </div>
+        <hr>
+        <div>
+            <label for="Small-checkbox" aria-label="Small size">Small</label>
+            <input id="Small-checkbox" type="checkbox" style="display: none;">
+            <label for="Medium-checkbox" aria-label="Medium size">Medium</label>
+            <input id="Medium-checkbox" type="checkbox" style="display: none;">
+            <label for="Large-checkbox" aria-label="Large size">Large</label>
+            <input id="Large-checkbox" type="checkbox" style="display: none;">
+        </div>
+        <hr>
+
+        <!-- Porduct amount -->
+        <div>
+
+        </div>
+        <button id="Add-to-cart">Add to Cart</button>
+        <hr>
+
+        <!-- reviwes of the product -->
+
+        <h3>All reviews</h3>
+        <button>Write a review</button>
+        <div>
+            <div class="reviews">
+                <div class="rating">
+                    <span class="star" data-value="5">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                </div>
+                <h4>Sarah M.</h4>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
+                    to
+                    elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+            </div>
+             <div class="reviews">
+                <div class="rating">
+                    <span class="star" data-value="5">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                </div>
+                <h4>Sarah M.</h4>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
+                    to
+                    elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+            </div>
+             <div class="reviews">
+                <div class="rating">
+                    <span class="star" data-value="5">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                </div>
+                <h4>Sarah M.</h4>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
+                    to
+                    elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+            </div>
+        </div>
+        <button>Load More Reviews</button>
 
     </main>
+     <!-- section 7 -->
 
+        <section id="section-7">
+            <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
+            <form action="#">
+                <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="email" name="email"
+                    placeholder="Enter your email adress">
+                <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
+            </form>
+        </section>
 
     <!-- footer -->
 
@@ -110,4 +200,5 @@
     <!-- Java Script -->
     <script src="../script.js"></script>
 </body>
+
 </html>

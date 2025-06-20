@@ -215,18 +215,18 @@ h1{
     overflow: auto;
     gap: 20px;
 }
-.Section-6-reviews{
+.reviews{
     min-width: 314px;
     padding: 24px;
     border: solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin-top: 25px;    
 }
-.Section-6-reviews h4{
+.reviews h4{
     margin: 7px 0px;
     font-size: var(--div-h4-sizes);
 }
-.Section-6-reviews p{
+.reviews p{
     font-size: var(--p-size);
     line-height: 20px;
 }
