@@ -330,3 +330,12 @@ img[alt="Pay-methods"]{
     width: 358px;
     border-radius: 20px;
 }
+#slider img{
+    width: 30%;
+}
+#color-1,
+#color-2{
+    width: 11%;
+    height: 40px;
+    border-radius: 50px;
+}

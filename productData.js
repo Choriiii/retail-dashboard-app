@@ -2,11 +2,11 @@ const products = [
     {
         id: '1',
         name: 'Short-Sleeved Cardigan',
-        price: '$145',
+        price: '$146',
         image: '../assets/Short-Sleeved Cardigan.avif',
         description: 'This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.',
         sizes: ['Small', 'Medium', 'Large'],
-        colors: ['Dark Beige', 'Black'],
+        colors: ['rgb(190, 172, 143)', 'rgb(0, 0, 0)'], //Dark Beige and Dark
         images: [
             '../assets/Short-Sleeved Cardigan-2.avif',
             '../assets/Short-Sleeved Cardigan-3.avif',
@@ -22,9 +22,10 @@ const products = [
         sizes: ['Small', 'Medium', 'Large'],
         colors: ['red', 'black'],
         images: [
-            '../assets/Button-Front Sweater Vest-model.avif',
+            '../assets/Button-Front Sweater Vest-3.avif',
             '../assets/Button-Front Sweater Vest-2.avif',
-            '../assets/Button-Front Sweater Vest-3.avif'
+            '../assets/Button-Front Sweater Vest-model.avif'
         ],
     }
 ]
+export default products;
