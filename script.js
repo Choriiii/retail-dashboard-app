@@ -26,3 +26,27 @@ document.getElementById('model-img').alt = 'Image-3';
 document.getElementById('color-1').style.backgroundColor = product.colors[0];
 document.getElementById('color-2').style.backgroundColor = product.colors[1];
 
+
+//Update quantity with plus and minus
+
+const plusButton = document.getElementById('plus')
+const minusButton = document.getElementById('minus');
+const quantityDisplay = document.getElementById('quantity');
+let quantity = 1;
+const updateQuantity = () => {
+    quantityDisplay.textContent = quantity;
+};
+
+plusButton.addEventListener('click', () => {
+    quantity++;
+    updateQuantity();
+});
+minusButton.addEventListener('click', () => {
+    if (quantity > 1) {
+        quantity--;
+        updateQuantity();
+    };
+});
+
+
+

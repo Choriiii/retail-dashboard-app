@@ -71,43 +71,50 @@
         <p id="product-description"></p>
         <hr>
         <p id="s-c">Select Colors</p>
-        <input id="color-1-checkbox" type="checkbox" style="display: none;">
-        <input id="color-2-checkbox" type="checkbox" style="display: none;">
-        <label for="color-1-checkbox">
-            <div id="color-1"></div>
-        </label>
-        <label for="color-2-checkbox">
-            <div id="color-2"></div>
-        </label>
+        <div>
+            <label for="color-1-radio">
+                <input class="input-radio" id="color-1-radio" type="radio" name="option">
+                <div class="radio-option" id="color-1"></div>
+            </label>
+            <label for="color-2-radio">
+                <input class="input-radio" id="color-2-radio" type="radio" name="option">
+                <div class="radio-option" id="color-2"></div>
+            </label>
+        </div>
         <hr>
         <p>Choose a size</p>
         <div id="sizes">
             <div class="size-option">
-                <input class="size-input" id="Small" type="radio" name="size" value="Small">
+                <input class="input-radio" id="Small" type="radio" name="size" value="Small">
                 <label for="Small" aria-label="Small size">Small</label>
             </div>
             <div class="size-option">
-                <input class="size-input" id="Medium" type="radio" name="size" value="Medium">
+                <input class="input-radio" id="Medium" type="radio" name="size" value="Medium">
                 <label for="Medium" aria-label="Medium size">Medium</label>
             </div>
             <div class="size-option">
-                <input class="size-input" id="Large" type="radio" name="size" value="Large">
+                <input class="input-radio" id="Large" type="radio" name="size" value="Large">
                 <label for="Large" aria-label="Large size">Large</label>
             </div>
         </div>
         <hr>
 
         <!-- Porduct amount -->
-        <div>
-
-        </div>
-        <button id="Add-to-cart">Add to Cart</button>
+        <section>
+            <div id="Product-amount">
+                <i id="plus" class="fa-solid fa-plus fa-xl" style="color: #000000;"></i>
+                <p id="quantity">1</p>
+                <i id="minus" class="fa-solid fa-minus fa-xl" style="color: #050505;"></i>
+            </div>
+            <button class="black-buttons">Add to Cart</button>
+        </section>
         <hr>
 
         <!-- reviwes of the product -->
-
-        <h3>All reviews</h3>
-        <button>Write a review</button>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <h3>All reviews</h3>
+            <button id="w-r" class="black-buttons">Write a review</button>
+        </div>
         <div>
             <div class="reviews">
                 <div class="rating">
@@ -149,7 +156,7 @@
                     elegant dresses, every piece I've bought has exceeded my expectations.”</p>
             </div>
         </div>
-        <button>Load More Reviews</button>
+        <button id="L-M" class="white-buttons">Load More Reviews</button>
 
     </main>
     <!-- section 7 -->
