@@ -21,7 +21,7 @@ hr{
     margin: 0 auto;
 }
 h2{
-     font-size: var(--h1-size);
+    font-size: var(--h1-size);
     font-family: var(--tittles-font);
     letter-spacing: 2px;
 }
@@ -161,7 +161,7 @@ h1{
     font-size: var(--div-h4-sizes);
     margin-top: 10px;
 }
-.Products p{
+.Products p, #product-price{
     font-size: var(--h4-size);
     font-weight: bold;
     margin-bottom: 30px;
@@ -326,16 +326,63 @@ img[alt="Pay-methods"]{
 
 /* Products Page Styles */
 
+
+#product-details{
+    padding: 16px;
+}
+#product-details hr{
+    margin: 15px 0px;
+}
+#product-details img{
+    border-radius: 20px;
+}
 #product-image{
     width: 358px;
-    border-radius: 20px;
+    margin: 40px 0px;
+}
+#slider{
+    display: flex;
+    justify-content: space-between;
 }
 #slider img{
     width: 30%;
+}
+#product-description{
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
 }
 #color-1,
 #color-2{
     width: 11%;
     height: 40px;
     border-radius: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+#color-1{
+    margin-left: 0;
+}
+.size-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+#sizes {
+    margin-top: 16px;
+    min-height: 39px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.size-option{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 62px;
+    background-color: rgba(240, 240, 240, 1);
+}
+.size-option:has(.size-input:checked) {
+    background-color: black;
+    color: white;
 }

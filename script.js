@@ -13,7 +13,8 @@ document.querySelectorAll('.Products').forEach(productElement => {
 const productJSON = localStorage.getItem('selectedProduct')
 const product = JSON.parse(productJSON);
 document.getElementById('product-name').textContent = product.name;
-document.getElementById('product-price').textContent = `Price: ${product.price}`;
+document.getElementById('product-price').textContent = product.price;
+document.getElementById('product-description').textContent = product.description;
 document.getElementById('product-image').src = product.image;
 document.getElementById('product-image').alt = product.name;
 document.getElementById('model-img').src = product.images[0];
@@ -24,3 +25,4 @@ document.getElementById('image-3').src = product.images[2];
 document.getElementById('model-img').alt = 'Image-3';
 document.getElementById('color-1').style.backgroundColor = product.colors[0];
 document.getElementById('color-2').style.backgroundColor = product.colors[1];
+
