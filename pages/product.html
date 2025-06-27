@@ -14,9 +14,9 @@
 <body>
     <header>
         <!-- small menu -->
-        <div id="small menu">
+        <div id="small-menu">
             <div>
-                <input id="checkbox" type="checkbox" style="display: none;">
+                <input id="checkbox" type="checkbox" style="display: none; color: black;">
                 <label for="checkbox" id="checkbox-label" aria-label="toggle navigation bar" aria-controls="small-menu">
                     <i class="fa-solid fa-bars" style="color: #000000;"></i>
                 </label>
@@ -34,10 +34,26 @@
                         </ul>
                     </nav>
                 </div>
-                <a href="./index.html"><img src="../assets/Logo.svg" alt="Logo"></a>
+                <a href="#"><img src="../assets/Logo.svg" alt="Logo"></a>
             </div>
             <div id="header-icons">
                 <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <i class="fa-regular fa-user" style="color: #000000;"></i>
+            </div>
+        </div>
+        <!-- big screens menu -->
+        <div id="big-menu">
+            <a style="margin: auto;" href="./index.html"><img src="../assets/logo-desktop.svg" alt="Logo"></a>
+            <nav style="margin: auto;">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </nav>
+            <input name="Search" type="text" placeholder="Search for products ..">
+            <div style="margin: auto;" id="header-icons">
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <i class="fa-regular fa-user" style="color: #000000;"></i>
             </div>
@@ -49,73 +65,77 @@
     <main id="product-details">
 
         <!-- Product images -->
-
-        <img id="product-image" src="" alt="Product image">
-        <div id="slider">
-            <img id="model-img" src="" alt="">
-            <img id="image-2" src="" alt="">
-            <img id="image-3" src="" alt="">
-        </div>
-
-        <!-- Product Info -->
-
-        <h1 id="product-name"></h1>
-        <div class="rating">
-            <span class="star" data-value="5">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="1">&#9733;</span>
-        </div>
-        <p id="product-price"></p>
-        <p id="product-description"></p>
-        <hr>
-        <p id="s-c">Select Colors</p>
-        <div>
-            <label for="color-1-radio">
-                <input class="input-radio" id="color-1-radio" type="radio" name="option">
-                <div class="radio-option" id="color-1"></div>
-            </label>
-            <label for="color-2-radio">
-                <input class="input-radio" id="color-2-radio" type="radio" name="option">
-                <div class="radio-option" id="color-2"></div>
-            </label>
-        </div>
-        <hr>
-        <p>Choose a size</p>
-        <div id="sizes">
-            <div class="size-option">
-                <input class="input-radio" id="Small" type="radio" name="size" value="Small">
-                <label for="Small" aria-label="Small size">Small</label>
+        <section id="section-1-products">
+            <div id="s-1-images">
+                <img id="product-image" src="" alt="Product image">
+                <div id="slider">
+                    <img id="model-img" src="" alt="">
+                    <img id="image-2" src="" alt="">
+                    <img id="image-3" src="" alt="">
+                </div>
             </div>
-            <div class="size-option">
-                <input class="input-radio" id="Medium" type="radio" name="size" value="Medium">
-                <label for="Medium" aria-label="Medium size">Medium</label>
-            </div>
-            <div class="size-option">
-                <input class="input-radio" id="Large" type="radio" name="size" value="Large">
-                <label for="Large" aria-label="Large size">Large</label>
-            </div>
-        </div>
-        <hr>
-
-        <!-- Porduct amount -->
-        <section>
-            <div id="Product-amount">
-                <i id="plus" class="fa-solid fa-plus fa-xl" style="color: #000000;"></i>
-                <p id="quantity">1</p>
-                <i id="minus" class="fa-solid fa-minus fa-xl" style="color: #050505;"></i>
-            </div>
-            <button class="black-buttons">Add to Cart</button>
+    
+            <!-- Product Info -->
+            <section id="product-info">
+                <h1 id="product-name"></h1>
+                <div class="rating">
+                    <span class="star" data-value="5">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                </div>
+                <p id="product-price"></p>
+                <p id="product-description"></p>
+                <hr>
+                <p id="s-c">Select Colors</p>
+                <div>
+                    <label for="color-1-radio">
+                        <input class="input-radio" id="color-1-radio" type="radio" name="option">
+                        <div class="radio-option" id="color-1"></div>
+                    </label>
+                    <label for="color-2-radio">
+                        <input class="input-radio" id="color-2-radio" type="radio" name="option">
+                        <div class="radio-option" id="color-2"></div>
+                    </label>
+                </div>
+                <hr>
+                <p>Choose a size</p>
+                <div id="sizes">
+                    <div class="size-option">
+                        <input class="input-radio" id="Small" type="radio" name="size" value="Small">
+                        <label for="Small" aria-label="Small size">Small</label>
+                    </div>
+                    <div class="size-option">
+                        <input class="input-radio" id="Medium" type="radio" name="size" value="Medium">
+                        <label for="Medium" aria-label="Medium size">Medium</label>
+                    </div>
+                    <div class="size-option">
+                        <input class="input-radio" id="Large" type="radio" name="size" value="Large">
+                        <label for="Large" aria-label="Large size">Large</label>
+                    </div>
+                </div>
+                <hr>
+    
+                <!-- Porduct amount -->
+                <section>
+                    <div id="Product-amount">
+                        <i id="plus" class="fa-solid fa-plus fa-xl" style="color: #000000;"></i>
+                        <p id="quantity">1</p>
+                        <i id="minus" class="fa-solid fa-minus fa-xl" style="color: #050505;"></i>
+                    </div>
+                    <button class="black-buttons">Add to Cart</button>
+                </section>
+                <hr>
+            </section>
         </section>
-        <hr>
 
         <!-- reviwes of the product -->
         <div style="display: flex; flex-direction: row; justify-content: space-between;">
             <h3>All reviews</h3>
             <button id="w-r" class="black-buttons">Write a review</button>
         </div>
-        <div>
+        <div id="reviews-container">
             <div class="reviews">
                 <div class="rating">
                     <span class="star" data-value="5">&#9733;</span>
@@ -173,14 +193,16 @@
     <!-- footer -->
 
     <footer>
-        <img src="../assets/Logo.svg" alt="Logo">
-        <p style="color: rgba(0, 0, 0, 0.6);">We have clothes that suits your style and which you’re proud to wear.
-            From women to men.</p>
-        <div id="footer-icons">
-            <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-            <i style="padding: 8px 11px;" class="fa-brands fa-facebook-f" style="color: #080808;"></i>
-            <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-            <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+        <div id="f-div" style="display: flex; flex-direction: column; gap: 20px;">
+            <img src="../assets/Logo.svg" alt="Logo">
+            <p style="color: rgba(0, 0, 0, 0.6);">We have clothes that suits your style and which you’re proud to wear.
+                From women to men.</p>
+            <div id="footer-icons">
+                <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                <i style="padding: 8px 11px;" class="fa-brands fa-facebook-f" style="color: #080808;"></i>
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+            </div>
         </div>
         <div class="footer-divs">
             <h4>COMPANY</h4>
@@ -216,8 +238,9 @@
     </footer>
 
     <!-- Java Script -->
-    <script type="module" src="../script.js"></script>
-    <script type="module" src="../productData.js"></script>
+    <script type="module" src="../scripts/script.js"></script>
+    <script src="../scripts/amount.js"></script>
+    <script type="module" src="../scripts/product.js"></script>
 </body>
 
 </html>

@@ -32,7 +32,9 @@ h2 {
 
 /* header styles */
 
-
+#big-menu{
+    display: none;
+}
 #sign-up {
     background-color: black;
     color: white;
@@ -194,6 +196,7 @@ h1 {
     padding: 16px;
     border-radius: 62px;
     border: solid rgba(0, 0, 0, 0.1);
+    min-width: 70%;
 }
 
 /* section 5 styles */
@@ -303,6 +306,9 @@ footer {
     gap: 20px;
     padding-top: 40px;
 }
+footer img{
+    width: 140px;
+}
 
 #footer-icons {
     width: 100%;
@@ -406,8 +412,8 @@ img[alt="Pay-methods"] {
 
 #color-1,
 #color-2 {
-    width: 11%;
-    height: 40px;
+    width: 37px;
+    height: 37px;
     border-radius: 50px;
     display: inline-block;
     margin: 10px;
@@ -444,17 +450,11 @@ img[alt="Pay-methods"] {
     color: white;
 }
 
-#product-details section {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
 #Product-amount {
     position: relative;
     border-radius: 62px;
     background-color: rgba(240, 240, 240, 1);
-    width: 36%;
+    width: 110px;
     height: 44px;
     display: inline-block;
 }
@@ -473,7 +473,7 @@ img[alt="Pay-methods"] {
 }
 #quantity{
     position: absolute;
-    left: 58px;
+    left: 48%;
     top: 11px;
     font-size: 14px;
 }
@@ -499,4 +499,152 @@ img[alt="Pay-methods"] {
     transform: translateX(-50%);
     color: white;
     font-size: 30px;
+}
+
+/* responsive ddesigne */
+
+@media (min-width: 1024px){
+:root {
+    --p-size: 15px;
+    --h1-size: 64px;
+    --h4-size: 40px;
+    --div-h4-sizes: 20px;
+}
+header{
+    padding: 15px 60px;
+}
+
+#small-menu{
+    display: none;
+}
+#big-menu{
+    display: flex;
+    flex-direction: row;
+}
+#big-menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+#big-menu a{
+    color: black;
+}
+#big-menu input{
+    background-color: rgba(240, 240, 240, 1);
+    color: black;
+    width: 577px;
+    border-radius: 62px;
+    border: none;
+    padding: 12px 16px;
+}
+#section-1-text{
+    max-width: 40%;
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+    gap: 30px;
+}
+h1{
+    line-height: 64px;
+}
+#section-2{
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+.s-products{
+    justify-content: center;
+}
+.Products img{
+    width: 295px;
+}
+#section-5{
+    margin: 0px 80px;
+}
+#section-5 h2{
+    width: auto;
+}
+#section-5 img{
+    margin-left: 20px;
+}
+#section-6{
+    margin-bottom: 60px;
+}
+#section-6 h2{
+    width: auto;
+    margin: 70px 0px 35px 0px;
+}
+#section-6-icons{
+    right: 80px;
+    left: auto;
+    top: 100px;
+}
+#section-7{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    
+}
+#section-7 h2{
+    width: 551px;
+    line-height: 45px;
+    font-size: 50px;
+    margin: auto;
+}
+#section-7 form{
+    width: 40%;
+}
+footer{
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 105px;
+}
+#f-div{
+    width: 258px;
+}
+/* Casual desktop styles */
+
+#casual-body img{
+    width: 300px;
+}
+#casual-body h3{
+    margin-left: 60px;
+    font-size: 32px;
+}
+
+/* Products desktop styles */
+#section-1-products{
+    display: flex;
+    flex-direction: row;
+}
+#product-image {
+    width: 444px;
+    margin: 40px 20px;
+}
+#s-1-images{
+    display: flex;
+    flex-direction: row-reverse;
+}   
+#slider{
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    gap: 15px;
+}
+#slider img{
+    width: 110px;
+}
+#product-name{
+    width: auto;
+}
+#Product-amount{
+    width: 170px;
+}
+#reviews-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 }

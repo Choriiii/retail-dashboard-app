@@ -17,7 +17,7 @@
     </div>
     <header>
         <!-- small menu -->
-        <div id="small menu">
+        <div id="small-menu">
             <div>
                 <input id="checkbox" type="checkbox" style="display: none;">
                 <label for="checkbox" id="checkbox-label" aria-label="toggle navigation bar" aria-controls="small-menu">
@@ -41,6 +41,22 @@
             </div>
             <div id="header-icons">
                 <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <i class="fa-regular fa-user" style="color: #000000;"></i>
+            </div>
+        </div>
+        <!-- big screens menu -->
+        <div id="big-menu">
+            <a style="margin: auto;" href="./index.html"><img src="../assets/logo-desktop.svg" alt="Logo"></a>
+            <nav style="margin: auto;">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </nav>
+            <input name="Search" type="text" placeholder="Search for products ..">
+            <div style="margin: auto;" id="header-icons">
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <i class="fa-regular fa-user" style="color: #000000;"></i>
             </div>
@@ -71,12 +87,11 @@
                     </div>
                 </div>
             </div>
-            <picture>
+            <picture style=" background-color: rgba(242, 240, 241, 1)">
                 <source media="(max-width: 600px)" srcset="../assets/Models-Mobile-Design.svg">
-                <img src="../assets/Models-Desktop.svg" alt="Desktop">
+                <img id="s-1-picture" src="../assets/Models-Desktop.svg" alt="Desktop">
             </picture>
         </section>
-
         <!-- section 2 -->
 
         <section id="section-2">
@@ -157,7 +172,9 @@
                     <p class="price">$130</p>
                 </div>
             </div>
-            <button class="white-buttons"><a style="color: black;" href="#">View all</a></button>
+            <div>
+                <button class="white-buttons"><a style="color: black;" href="#">View all</a></button>
+            </div>
         </section>
         <hr>
 
@@ -215,7 +232,9 @@
                     <p class="price">$210</p>
                 </div>
             </div>
-            <button class="white-buttons">View All</button>
+            <div>
+                <button class="white-buttons">View All</button>
+            </div>
         </section>
 
         <!-- section 5 -->
@@ -225,20 +244,20 @@
             <a href="../pages/Casual.html">
                 <picture>
                     <source media="(max-width: 600px)" srcset="../assets/casual-mobile.svg">
-                    <img src="" alt="">
+                    <img src="../assets/casual-desktop.svg" alt="casual">
                 </picture>
             </a>
             <picture>
                 <source media="(max-width: 600px)" srcset="../assets/formal-mobile.svg">
-                <img src="" alt="">
+                <img src="../assets/formal-desktop.svg" alt="formal">
             </picture>
             <picture>
                 <source media="(max-width: 600px)" srcset="../assets/party-mobile.svg">
-                <img src="" alt="">
+                <img src="../assets/party-desktop.svg" alt="party">
             </picture>
             <picture>
                 <source media="(max-width: 600px)" srcset="../assets/gym-mobile.svg">
-                <img src="" alt="">
+                <img src="../assets/gym-desktop.svg" alt="gym">
             </picture>
         </section>
 
@@ -306,20 +325,21 @@
             </div>
         </section>
     </main>
-        <!-- section 7 -->
+    <!-- section 7 -->
 
-        <section id="section-7">
-            <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
-            <form action="#">
-                <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="mail" name="mail"
-                    placeholder="Enter your email adress">
-                <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
-            </form>
-        </section>
+    <section id="section-7">
+        <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
+        <form action="#">
+            <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="mail" name="mail"
+                placeholder="Enter your email adress">
+            <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
+        </form>
+    </section>
 
-        <!-- footer -->
+    <!-- footer -->
 
-        <footer>
+    <footer>
+        <div id="f-div" style="display: flex; flex-direction: column; gap: 20px;">
             <img src="../assets/Logo.svg" alt="Logo">
             <p style="color: rgba(0, 0, 0, 0.6);">We have clothes that suits your style and which you’re proud to wear.
                 From women to men.</p>
@@ -329,38 +349,39 @@
                 <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                 <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
             </div>
-            <div class="footer-divs">
-                <h4>COMPANY</h4>
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Work</a>
-                <a href="#">Career</a>
-            </div>
-            <div class="footer-divs">
-                <h4>HELP</h4>
-                <a href="#">Customer Support</a>
-                <a href="#">Delivery Details</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="footer-divs">
-                <h4>FAQs</h4>
-                <a href="#">Acount</a>
-                <a href="#">Manage Deliveries</a>
-                <a href="#">Orders</a>
-                <a href="#">Payment</a>
-            </div>
-            <div class="footer-divs">
-                <h4>RESOURCES</h4>
-                <a href="#">Free eBook</a>
-                <a href="#">Development Tutorial</a>
-                <a href="#">How to - Blog</a>
-                <a href="#">Youtube Playlist</a>
-            </div>
-            <hr>
-            <p id="copy">Shop.co © 2000-2023, All Rights Reserved</p>
-            <img src="../assets/pay-methods.svg" alt="Pay-methods">
-        </footer>
+        </div>
+        <div class="footer-divs">
+            <h4>COMPANY</h4>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Work</a>
+            <a href="#">Career</a>
+        </div>
+        <div class="footer-divs">
+            <h4>HELP</h4>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-divs">
+            <h4>FAQs</h4>
+            <a href="#">Acount</a>
+            <a href="#">Manage Deliveries</a>
+            <a href="#">Orders</a>
+            <a href="#">Payment</a>
+        </div>
+        <div class="footer-divs">
+            <h4>RESOURCES</h4>
+            <a href="#">Free eBook</a>
+            <a href="#">Development Tutorial</a>
+            <a href="#">How to - Blog</a>
+            <a href="#">Youtube Playlist</a>
+        </div>
+        <hr>
+        <p id="copy">Shop.co © 2000-2023, All Rights Reserved</p>
+        <img src="../assets/pay-methods.svg" alt="Pay-methods">
+    </footer>
 </body>
 
 </html>
