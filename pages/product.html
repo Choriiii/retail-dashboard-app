@@ -54,7 +54,7 @@
             </nav>
             <input name="Search" type="text" placeholder="Search for products ..">
             <div style="margin: auto;" id="header-icons">
-                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
                 <i class="fa-regular fa-user" style="color: #000000;"></i>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     <img id="image-3" src="" alt="">
                 </div>
             </div>
-    
+
             <!-- Product Info -->
             <section id="product-info">
                 <h1 id="product-name"></h1>
@@ -91,11 +91,11 @@
                 <p id="s-c">Select Colors</p>
                 <div>
                     <label for="color-1-radio">
-                        <input class="input-radio" id="color-1-radio" type="radio" name="option">
+                        <input class="input-radio" id="color-1-radio" type="radio" name="color" value="">
                         <div class="radio-option" id="color-1"></div>
                     </label>
                     <label for="color-2-radio">
-                        <input class="input-radio" id="color-2-radio" type="radio" name="option">
+                        <input class="input-radio" id="color-2-radio" type="radio" name="color" value="">
                         <div class="radio-option" id="color-2"></div>
                     </label>
                 </div>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <hr>
-    
+
                 <!-- Porduct amount -->
                 <section>
                     <div id="Product-amount">
@@ -241,6 +241,8 @@
     <script type="module" src="../scripts/script.js"></script>
     <script src="../scripts/amount.js"></script>
     <script type="module" src="../scripts/product.js"></script>
+    <script src="../scripts/cart.js"></script>
+
 </body>
 
 </html>

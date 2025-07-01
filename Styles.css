@@ -501,6 +501,11 @@ img[alt="Pay-methods"] {
     font-size: 30px;
 }
 
+/* Cart page styles */
+#cart-body img{
+    width: 200px;
+}
+
 /* responsive ddesigne */
 
 @media (min-width: 1024px){

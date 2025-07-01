@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles.css">
 </head>
+
 <body>
     <div id="sign-up">
         <p>Sign up and get 20% oof to your first order. <a href="#">Sing Up Now</a></p>
@@ -56,28 +58,50 @@
             <input name="Search" type="text" placeholder="Search for products ..">
             <div style="margin: auto;" id="header-icons">
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-                <i class="fa-regular fa-user" style="color: #000000;"></i>
+                <a href="./cart.html"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
             </div>
         </div>
     </header>
     <hr>
+   <main id="cart-body">
+    <h1>YOUR CART</h1>
+    <div id="cart-container">
+        <div id="cart-items">
+        </div>
+        <div id="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+                <p>Subtotal</p>
+                <p id="subtotal">$0.00</p>
+            </div>
+            <div class="summary-row">
+                <p>Shipping</p>
+                <p id="shipping">$0.00</p>
+            </div>
+            <div class="summary-row">
+                <p>Total</p>
+                <p id="total">$0.00</p>
+            </div>
+            <button class="black-buttons" id="checkout-btn">Go to Checkout</button>
+        </div>
+    </div>
+</main>
 
 
+    <!-- section 7 -->
 
-     <!-- section 7 -->
+    <section id="section-7">
+        <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
+        <form action="#">
+            <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="mail" name="mail"
+                placeholder="Enter your email adress">
+            <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
+        </form>
+    </section>
 
-        <section id="section-7">
-            <h2>STAY UPTO DATE ABOUT OUR LASTEST OFFERS</h2>
-            <form action="#">
-                <input style="color: rgba(0, 0, 0, 0.4);" type="text" id="mail" name="mail"
-                    placeholder="Enter your email adress">
-                <button><a style="color: #000000; font-weight: bold;" href="#">Subscribe to Newsletter</a></button>
-            </form>
-        </section>
+    <!-- footer -->
 
-        <!-- footer -->
-
-      <footer>
+    <footer>
         <div id="f-div" style="display: flex; flex-direction: column; gap: 20px;">
             <img src="../assets/Logo.svg" alt="Logo">
             <p style="color: rgba(0, 0, 0, 0.6);">We have clothes that suits your style and which you’re proud to wear.
@@ -121,6 +145,7 @@
         <p id="copy">Shop.co © 2000-2023, All Rights Reserved</p>
         <img src="../assets/pay-methods.svg" alt="Pay-methods">
     </footer>
-    
+<script src="../scripts/cart.js"></script>
 </body>
+
 </html>

@@ -24,8 +24,41 @@ productJSON && (() => {
         });
       });
     })
+// Añade producto al carrito
+function addToCart(product) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItem = cart.find(item => item.id === product.id);
 
+    if (existingItem) {
+        existingItem.quantity = (existingItem.quantity || 1) + 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
 
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${product.name} added to cart!`);
+}
+
+// Devuelve el producto por ID desde la lista
+function getProductById(products, id) {
+    return products.find(p => p.id === id);
+}
+
+// Inicializa el DOM y eventos
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('../productData.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to fetch product data');
+            return response.json();
+        })
+        .then(products => {
+            document.querySelectorAll('.Products').forEach((el, index) => {
+                const productId = el.dataset.id || String(index + 1);
+                const product = getProductById(products, productId);
+            });
+        })
+        .catch(err => console.error('Error loading products:', err));
+});
 
 
 
