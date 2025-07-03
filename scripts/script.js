@@ -24,7 +24,7 @@ productJSON && (() => {
         });
       });
     })
-// Añade producto al carrito
+
 function addToCart(product) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const existingItem = cart.find(item => item.id === product.id);
@@ -39,12 +39,11 @@ function addToCart(product) {
     alert(`${product.name} added to cart!`);
 }
 
-// Devuelve el producto por ID desde la lista
 function getProductById(products, id) {
     return products.find(p => p.id === id);
 }
 
-// Inicializa el DOM y eventos
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('../productData.json')
         .then(response => {

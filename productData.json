@@ -6,25 +6,26 @@
         "image": "../assets/Short-Sleeved Cardigan.avif",
         "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
         "sizes": ["Small", "Medium", "Large"],
-        "colors": ["rgb(190, 172, 143)", "rgb(0, 0, 0)"],
+        "colors": ["brown", "black"],
         "images": [
             "../assets/Short-Sleeved Cardigan-2.avif",
             "../assets/Short-Sleeved Cardigan-3.avif",
             "../assets/Short-Sleeved Cardigan-model.avif"
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Button-Front Sweater Vest",
-        "price": "$145",
-        "image": "../assets/Button-Front Sweater Vest.avif",
-        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
-        "sizes": ["Small", "Medium", "Large"],
-        "colors": ["red", "black"],
-        "images": [
-            "../assets/Button-Front Sweater Vest-3.avif",
-            "../assets/Button-Front Sweater Vest-2.avif",
-            "../assets/Button-Front Sweater Vest-model.avif"
+        ],
+        "stock": 50,
+        "sales": 120,
+        "reviews": [
+            {
+                "user": "Sarah M.",
+                "rating": 5,
+                "text": "I'm blown away by the quality and style. The fabric is excellent and it fits great!"
+            },
+            {
+                "user": "John D.",
+                "rating": 4,
+                "text": "Good product, but the color was slightly different than expected."
+            }
         ]
     }
+    
 ]

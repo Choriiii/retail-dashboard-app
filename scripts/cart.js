@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         totalElement.textContent = formatPrice(total);
     };
 
-  const createCartItemHTML = ({ image, name, price, quantity = 1, selectedColor, selectedSize }, index) => `
+    const createCartItemHTML = ({ image, name, price, quantity = 1, selectedColor, selectedSize }, index) => `
     <div class="cart-item">
         <div class="cart-item-image">
             <img src="${image}" alt="${name}">
@@ -80,15 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
             updateQuantity(index, target.dataset.action);
         }
     });
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+            if (!cart.length) {
+                alert('Your cart is empty');
+            } else {
+                alert('Proceeding to checkout');
+                // window.location.href = '/checkout';
+            }
+        });
+    }
 
-    checkoutBtn.addEventListener('click', () => {
-        if (!cart.length) {
-            alert('Your cart is empty');
-        } else {
-            alert('Proceeding to checkout');
-            // window.location.href = '/checkout'; // Descomenta si se quiere redirigir
-        }
-    });
 
     renderCartItems();
 });
